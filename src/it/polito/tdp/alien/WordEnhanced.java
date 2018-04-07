@@ -9,9 +9,9 @@ public class WordEnhanced {
 	private List<String> translations;
 	
 	public WordEnhanced(String p, String t) {
-		this.translations = new LinkedList<String>();
-		this.translations.add(t);
-		this.alienWord = p;
+		translations = new LinkedList<String>();
+		translations.add(t);
+		alienWord = p;
 	}
 	
 	public void setTranslation(String t) {
@@ -27,6 +27,12 @@ public class WordEnhanced {
 			ris += "<"+s+">" + "\n";
 		}
 		return ris;
+	}
+	
+	public boolean compareWild(String alienWild) {
+		if (alienWord.matches(alienWild))
+			return true;
+		return false;
 	}
 	
 	@Override

@@ -41,6 +41,26 @@ public class AlienDictionary {
 		return null;
 		
 	}
+	
+	public String translateWordWildCard(String alienWord) {
+		
+		alienWord = alienWord.replaceAll("\\?", ".");
+		int matchCounter = 0;
+		StringBuilder sb = new StringBuilder();
+		
+		for (WordEnhanced w : parole) {
+			if (w.compareWild(alienWord)) {
+				matchCounter++;
+				sb.append(w.getTranslation());
+			}
+		}
+		
+		if (matchCounter != 0)
+			return sb.toString();
+		else
+			return null;
+
+	}
 
 	public void resetDictionary() {
 		parole.clear();

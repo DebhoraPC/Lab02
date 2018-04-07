@@ -6,8 +6,8 @@ public class Word {
 	private String translation; 
 	
 	public Word(String p, String t) {
-		this.alienWord = p;
-		this.translation = t;
+		alienWord = p;
+		translation = t;
 	}
 
 	@Override
@@ -28,11 +28,11 @@ public class Word {
 	}
 	
 	public void setTranslation(String t) {
-		this.translation = t;
+		translation = t;
 	}
 	
 	public String getTranslation() {
-		return "\n<" + this.translation + ">\n";
+		return "\n<" + translation + ">\n";
 	}
 
 }

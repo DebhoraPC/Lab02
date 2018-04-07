@@ -41,7 +41,7 @@ public class Test {
 		if (dizionario.translateWord(parole[0]) == null) 
 			System.out.println("Dizionario vuoto!\n");
 		
-		// TEST PER L'ESERCIZIO 2
+		// TEST PER L'ESERCIZIO 2 (NO OPZIONALE)
 		j=0;
 		while (j < dim) {
 			dizionario.addWord(parole[j], parole[j+1]);
