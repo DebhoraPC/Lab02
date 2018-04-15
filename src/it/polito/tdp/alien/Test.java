@@ -1,5 +1,8 @@
 package it.polito.tdp.alien;
 
+import java.util.ArrayList;
+import java.util.List;
+
 // ALCUNI TEST PER CONTROLLARE IL CORRETTO FUNZIONAMENTO
 
 public class Test {
@@ -20,6 +23,11 @@ public class Test {
 			parole[j] = s;
 			j++;
 		}
+		
+		// ALTRO METODO PER GENERARE UN INSIEME DI PAROLE RANDOM (PIU' FACILE)
+		List<String> esempio = new ArrayList<String>();
+		for (int i=0; i < 10000; i++)
+			esempio.add("parola..." + i);
 		
 		// TEST PER L'ESERCIZIO 1
 		j=0;
